@@ -4,7 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Unique in order</title>
+    <script type="text/javascript" charset="utf-8">
+        var arr = 'AAAABBBCCDAABBB'
+        
+        function uniqueInOrder(arr){
+           let newArr = arr.split('').reduce((x, y)=>{
+               if(y!=x[length-1]){
+                   return x+y
+               } else {
+                   
+               }
+           }) 
+           
+           console.log(newArr)
+        }
+        
+        uniqueInOrder(arr)
+    </script>
 </head>
 
 <body>
@@ -18,12 +35,9 @@
            uniqueInOrder('ABBCcAD') == ['A', 'B', 'C', 'c', 'A', 'D']
        </li>
        <li>
-           uniqueInOrder([1,2,2,3,3]) == [1,2, 3]
+           uniqueInOrder([1,2,2,3,3]) == [1, 2, 3]
        </li>
    </ul>
-    
-    
-    </p>
 </body>
 
 </html>
